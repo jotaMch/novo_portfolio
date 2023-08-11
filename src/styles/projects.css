@@ -1,0 +1,131 @@
+.main__project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+    margin-bottom: 200px;
+    position: relative;
+    top: -110px;
+/*     background-image: linear-gradient(to right, #030003 60%, rgb(218, 2, 35));
+ */}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+}
+
+.project h3 {
+    color: #ededed;
+}
+
+/* .sombra::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -300px;
+    width: 90%;
+    height: 30%;
+    transform: rotate(40deg);
+    background-color:  #06e8d9;
+    border-radius: 81% 5% 86% 5% / 85% 0% 79% 6%;
+    filter: blur(20px);
+    z-index: -1; 
+} */
+
+.card-project {
+    padding-top: 50px;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    background-image: radial-gradient(#072535 2px, transparent 2px), radial-gradient(#06e8d9 2px, transparent 2px);
+    background-size: 23px 23px;
+    background-position: 0 0, 11px 11px;
+    background-color: #050013;
+    width: 300px;
+    height: 250px;
+    transition: height .2s all ease;
+}
+
+.card-project:hover .content-box {
+    width: 100%;
+    height: 60%;
+    margin-top: 80px;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+} 
+
+
+p.card-content {
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.content-box {
+    background: linear-gradient(135deg, #050013 0%,#06e8d9 100%);
+    border-radius: 0px 100px 10px 10px;
+    width: 90%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    padding: 50px 25px 25px 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+}
+
+.content-box .btn {
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #ededed;
+    border-left: 2px solid #ededed;
+    border-radius: 0 0 0 1rem;
+    /* botao */
+    background: linear-gradient(245deg, rgba(0, 251, 255, 0) 0%, rgba(0,168,255,1) 100%);
+    margin-top: 6px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .main__project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        margin: 650px 0;
+        position: static;
+        width: 100%;
+    }
+
+    .project {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .card-project {
+        margin: 28px 0;
+    }
+
+    .card-project {
+        padding-top: 50px;
+        border-radius: 10px;
+        transform-style: preserve-3d;
+        background-image: radial-gradient(#072535 2px, transparent 2px), radial-gradient(#06e8d9 2px, transparent 2px);
+        background-size: 23px 23px;
+        background-position: 0 0, 11px 11px;
+        background-color: #050013;
+        width: 100%;
+        height: 250px;
+        transition: height .2s all ease;
+    }
+
+}
