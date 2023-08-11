@@ -7,6 +7,7 @@ import About from './components/About';
 import Habilidades from './components/Habilidades';
 import Projects from './components/Projects';
 import Educacao from './components/Educacao';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -29,11 +30,12 @@ function App() {
             <Habilidades />
             
             <Educacao />
- 
+
           </div>
         </section>
       </div>
             <Projects />
+            <Footer />
     </div>
     </>
   )

@@ -4,34 +4,44 @@
     background-color: transparent;
     border: none;
     position: absolute;
-    right: 2%;
-    top: 2%;
+    right: 4%;
+    top: 3%;
 }
 
-.line {
+
+.hamburguer .line {
     display: block;
-    width: 20px;
+    width: 22px;
     height: 3px;
-    background-color: red;
+    background-color: rgba(0, 255, 200, 0.699);
     margin-block: 5px;
     position: relative;
     border-radius: 4px;
-    transition: transform .5s;
-    opacity: .25s;
+    transition: transform .5s, opacity .25s; /* Adicione a transição de opacidade aqui */
 }
 
-&.active .line:nth-child(1) {
-    transform: translateY(8px) rotate(-45deg);
+.line:nth-child(2) {
+    width: 14px;
+    margin-left: auto;
 }
 
-&.active .line:nth-child(2) {
-    opacity: 0;
+.line:nth-child(3) {
+    width: 6px;
+    margin-left: auto;
 }
 
-&.active .line:nth-child(3) {
-    transform: translateY(-8px) rotate(45deg);
+.hamburguer.active .line:nth-child(1) {
+transform: translateY(8px) rotate(-45deg);
 }
 
+.hamburguer.active .line:nth-child(2) {
+opacity: 0;
+}
+
+.hamburguer.active .line:nth-child(3) {
+transform: translateY(-8px) rotate(45deg);
+width: 22px;
+}
 
 
 
