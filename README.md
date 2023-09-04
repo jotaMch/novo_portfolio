@@ -1,3 +1,3 @@
-# Meu Portfólio feito em React + Vite + eslintrc
+# Meu Portfólio freelancer
 
-- Seja bem vindo
+- Para feela
