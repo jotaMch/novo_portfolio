@@ -4,19 +4,19 @@ import './styles/colorText.css';
 import Header from './components/Header';
 import SectionInicio from './components/SectionInicial';
 import About from './components/About';
-import Habilidades from './components/Habilidades';
+import Habilidades from './components/Skills';
 import Projects from './components/Projects';
 import Educacao from './components/Educacao';
 import Footer from './components/Footer';
+import Mensagem from './components/Mensagem'; 
+import Techskill from './components/TechSkills';
 
 
 function App() {
 
   return (
     <>
-    <div className="app">
-
-          
+    <div className="app">          
       <main>
         <div className="container">
           <Header />
@@ -24,18 +24,18 @@ function App() {
         </div>
       </main>
       <div className="container">
-        <section>
-          <div className='position-class'>
             <About />
-            <Habilidades />
-            
-            <Educacao />
-
+            <Habilidades />  
           </div>
-        </section>
-      </div>
-            <Projects />
-            <Footer />
+          
+            < Techskill />     
+
+          <div className="container">
+          <Educacao />
+            <Projects />            
+          < Mensagem />  
+          <Footer />
+          </div>
     </div>
     </>
   )
