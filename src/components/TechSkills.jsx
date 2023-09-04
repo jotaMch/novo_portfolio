@@ -40,7 +40,7 @@ export default  function Techskill() {
                         Tenho me dedicado a aprimorar habilidades desde HTML, CSS e JavaScript até frameworks como 
                         Bootstrap e bibliotecas como jQuery. 
                         Recentemente, tenho me concentrado em Vite, Styled-components, Tailwind e API REST.
-                        Venho estudando dia após dia para obter melhores conhecimmentos e boas práticas.
+                        Venho estudando dia após dia para obter melhores conhecimentos e boas práticas.
                     </p>
                 </div>
             </StyledText>   
